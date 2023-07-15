@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed');
+
+
+:root {
+    /* box-sizing: border-box; */
+    --primary-color: white;
+    --secundary-color: black;
+    --border-radius: 10px;
+}
+
+body {
+    background-color: #EDF2F8;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    margin: 0;
+    padding: 10%; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    color: var(--primary-color);
+    gap: 20px;
+
+}
+
+.titulo-1{
+    font-weight: bold;
+}
+.titulo-2{
+    
+    opacity: 0.5;
+}
+
+.parrafo-1{
+    font-weight:800;
+}
+.parrafo-2{
+    opacity: 0.7;
+}
+.header {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.card-image {
+    height: 32px;;
+    width:32px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 50% ;
+}
+.img-1{
+    border: 2px solid #A071E1;
+    border-radius: 50% ;
+    padding: 0%;
+    margin: 10px;
+}
+.img-4{
+    border: 2px solid hsl(263, 55%, 52%);
+    border-radius: 50% ;
+    padding: 0%;
+    margin: 10px;
+}
+
+.titulos {
+    align-self: center;
+}
+
+.parrafos {
+    padding: 10px;
+}
+
+.item-1 {
+    height:auto;
+    width:auto;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    grid-column: 1/3;
+    border-radius: var(--border-radius);
+}
+
+
+
+.item-2 {
+    height:auto;
+    width:auto;
+    background-color: hsl(217, 19%, 35%);
+    grid-column: 3;
+    border-radius: var(--border-radius);
+
+}
+
+.item-3 {
+    height:auto;
+    width:auto;
+    background-color: hsl(0, 0%, 100%);
+    color: var(--secundary-color);
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: var(--border-radius);
+}
+
+.item-4 {
+    height:auto;
+    width:auto;
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2/4;
+    grid-row: 2;
+    border-radius: var(--border-radius);
+}
+
+.item-5 {
+    height:auto;
+    width:auto;
+    background-color: hsl(0, 0%, 100%);
+    color: var(--secundary-color);
+    grid-column: 4;
+    grid-row: 1/3;
+    border-radius: var(--border-radius);
+}
+
+@media(max-width: 375px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
